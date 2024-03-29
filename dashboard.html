@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .sidebar {
+            background-color: #343a40;
+            color: #fff;
+            height: 100vh;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: #fff;
+        }
+        .sidebar a:hover {
+            color: #f8f9fa;
+        }
+        .content {
+            background-color: #f8f9fa;
+            padding: 20px;
+            height: 100vh;
+            border-left: 1px solid #dee2e6;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .table th, .table td {
+            border-top: none;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h2 class="text-center">Akun</h2>
+                    <a href="#" class="btn btn-block btn-secondary">Profil</a>
+                    <a href="#" class="btn btn-block btn-secondary">Logout</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="content">
+                    <h2 class="text-center mb-4">Dashboard</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No ID</th>
+                                        <th scope="col">No HP</th>
+                                        <th scope="col">Owner</th>
+                                        <th scope="col">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>08123456789</td>
+                                        <td>John Doe</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Edit</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
